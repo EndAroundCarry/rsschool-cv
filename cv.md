@@ -35,3 +35,51 @@ Angular
 Jquery
 
 - Jquery is the front end framework that I have used in the past 3 years for my projects.
+
+## Code Examples
+
+     private void InitializeGame(List<Card> cards, List<Player> players)
+        {
+            List<string> specialCardNames = new List<string> { "Jack", "Queen", "King" };
+
+            for (int i = 2; i <= 11; i++)
+            {
+                if (i == 11)
+                {
+                    for (int j = 0; j < 4; j++)
+                    {
+                        cards.Add(new Card { Name = "Ace", Value = i });
+                    }
+                    break;
+                }
+                if(i == 10)
+                {
+                    for (int j = 0; j < 4; j++)
+                    {
+                        cards.Add(new Card { Name = i.ToString(), Value = i });
+                    }
+
+                    foreach (var cr in specialCardNames)
+                    {
+                        for (int k = 0; k < 4; k++)
+                        {
+                            cards.Add(new Card { Name = cr.ToString(), Value = i });
+                        }
+                    }
+                }
+                else if(i < 10)
+                {
+                    for (int j = 0; j < 4; j++)
+                    {
+                        cards.Add(new Card { Name = i.ToString(), Value = i });
+                    }
+                }
+            }
+            ShuffleCardsAndDeal(cards, players);
+        }
+
+
+## Experience
+
+- For my experience I have done some courses on **Coursera** and also **Plurasight** and **Packt** but I do not have code to show for it.
+- I project I worked on is a game of [simplified blackjack](https://github.com/EndAroundCarry/Simplified-Blackjack/tree/main) for which I will share the source code.
