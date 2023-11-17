@@ -38,48 +38,59 @@ Jquery
 
 ## Code Examples
 
-     private void InitializeGame(List<Card> cards, List<Player> players)
-        {
-            List<string> specialCardNames = new List<string> { "Jack", "Queen", "King" };
+- #### Code from and application I developed
 
-            for (int i = 2; i <= 11; i++)
-            {
-                if (i == 11)
-                {
-                    for (int j = 0; j < 4; j++)
-                    {
-                        cards.Add(new Card { Name = "Ace", Value = i });
-                    }
-                    break;
-                }
-                if(i == 10)
-                {
-                    for (int j = 0; j < 4; j++)
-                    {
-                        cards.Add(new Card { Name = i.ToString(), Value = i });
-                    }
+  private void InitializeGame(List<Card> cards, List<Player> players)
+  {
+  List<string> specialCardNames = new List<string> { "Jack", "Queen", "King" };
 
-                    foreach (var cr in specialCardNames)
-                    {
-                        for (int k = 0; k < 4; k++)
-                        {
-                            cards.Add(new Card { Name = cr.ToString(), Value = i });
-                        }
-                    }
-                }
-                else if(i < 10)
-                {
-                    for (int j = 0; j < 4; j++)
-                    {
-                        cards.Add(new Card { Name = i.ToString(), Value = i });
-                    }
-                }
-            }
-            ShuffleCardsAndDeal(cards, players);
-        }
+          for (int i = 2; i <= 11; i++)
+          {
+              if (i == 11)
+              {
+                  for (int j = 0; j < 4; j++)
+                  {
+                      cards.Add(new Card { Name = "Ace", Value = i });
+                  }
+                  break;
+              }
+              if(i == 10)
+              {
+                  for (int j = 0; j < 4; j++)
+                  {
+                      cards.Add(new Card { Name = i.ToString(), Value = i });
+                  }
 
+                  foreach (var cr in specialCardNames)
+                  {
+                      for (int k = 0; k < 4; k++)
+                      {
+                          cards.Add(new Card { Name = cr.ToString(), Value = i });
+                      }
+                  }
+              }
+              else if(i < 10)
+              {
+                  for (int j = 0; j < 4; j++)
+                  {
+                      cards.Add(new Card { Name = i.ToString(), Value = i });
+                  }
+              }
+          }
+          ShuffleCardsAndDeal(cards, players);
+      }
 
 ## Experience
 
 - For my experience I have done some courses on **Coursera** and also **Plurasight** and **Packt** but I do not have code to show for it.
 - I project I worked on is a game of [simplified blackjack](https://github.com/EndAroundCarry/Simplified-Blackjack/tree/main) for which I will share the source code.
+
+## Education
+
+- 2013-2020 Bachelor degree from **Politehnica University Timisoara**
+- Jan 2020 - March 2020 **SSI Schaefer** coding school
+
+## English
+
+- Learned english from kindergarden up until university and also the first year of university.
+- In my final highschool exam I was awarded B2 in all categories(listening, understanding and writing).
