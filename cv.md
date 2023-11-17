@@ -23,3 +23,15 @@ C#
 Net Core
 
 - developing web applications for a big automotive company to help them manage their employees.
+
+BitBucket
+
+- For version control I have used bitbucket for about 3 years now.
+
+Angular
+
+- Also I have some experience with angular by working on a project for about a year that used angular as front-end.
+
+Jquery
+
+- Jquery is the front end framework that I have used in the past 3 years for my projects.
